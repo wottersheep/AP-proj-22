@@ -183,6 +183,7 @@ while True:                                     #main part of the game will be w
         if player_rect.bottom >= 300 : player_rect.bottom=300
         player_animation()
         screen.blit(player_surf,player_rect)
+        player.draw(screen)
 
         #OBSTACLE MOVEMENT
         obstacle_rect_list =   obstacle_movement(obstacle_rect_list)
